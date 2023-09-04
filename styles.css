@@ -1,0 +1,264 @@
+body {
+    background-color: #131313;
+}
+
+
+.section2 {
+    width: 1440px;
+    height: 100%;
+    position: relative;
+    margin-top: 20px;
+    padding-top: 4%;
+    left: 50%;
+    margin-left: -770px;
+    
+}
+
+.section2-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 665px;
+    padding-top: 107px;
+    margin-bottom: -10px;
+    width: 650px;
+}
+
+.section2-navigation_item {
+    color: rgba(255, 255, 255, 0.458);
+    margin: 0;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.section2-navigation_item:hover {
+    color: rgba(227, 184, 115, 1);
+    cursor: pointer;
+}
+
+#slides {
+    list-style: none;
+}
+
+.image2 {
+    height: 482px; 
+    width: 679px;
+    margin-left: 665px;
+    margin-top: 40px;
+} 
+
+.slide {
+    background-color: rgba(19, 19, 19, 1);
+    color:#fff;
+    justify-content: center;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    position: absolute;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.section2-navigation_item.active {
+    color: #E3B873;
+    border-bottom: 1px solid;
+}
+
+.title2 {
+    color: rgba(227, 184, 115, 1);
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    margin-left: 134px;
+    width: 283px;
+    height: 66px;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.rectangle {
+    width: 92px;
+    height: 1px;
+    position: absolute;
+    margin-left: 270px;
+    margin-top: 105px;
+}
+
+
+
+.section2-text2 {
+    color: white;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    margin-left: 134px;
+    width: 400px;
+    height: 86px;
+    margin-top: 150px;
+}
+
+.section2-text3 {
+    color: rgba(227, 184, 115, 1);
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    position: absolute;
+}
+
+.section2-text4 {
+    color: white;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;  
+    position: absolute; 
+}
+
+.section2Date {
+    display: grid;
+    grid-template-columns: 190px 190px;
+    margin-top: 30px;
+    margin-left: 134px;
+    width: 400px;
+}
+
+.grid-item {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 1);
+    padding: 5px;
+    font-size: 13px;
+    text-align: left;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.grid-item-header {
+    color:rgba(227, 184, 115, 1);
+    text-transform: uppercase;
+    font-family: 'Yeseva One';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.grid-item-header-lowrow {
+    padding-top: 34px;
+}
+
+
+/* ----------------------ARROWS----------------------------------- */
+
+.arrowRight{
+    margin-left: 100px;
+}
+
+.arrowLeft, 
+.arrowRight {
+    top: 15px;
+    width: 60px;
+    height: 40px;
+    position: relative;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+ .arrow1 {
+    width: 200px;
+    margin-top: 80px;
+    margin-left: 150px;
+    position: absolute;
+    display: inline-flex;
+}
+
+.arrowLeft::before,
+.arrowRight::before,
+.arrowLeft::after,
+.arrowRight::after{
+    content: '';
+    position:absolute;
+}
+
+.arrowLeft::before,
+.arrowRight::before {
+    width: 40px;
+    height: 2px;
+    top: 9px;
+    background-color: #FFFFFF;
+}
+
+.arrowRight::before{
+    left: 60px;
+}
+
+.arrowLeft::after,
+.arrowRight::after{
+    width: 15px;
+    height: 15px;
+}
+
+.arrowLeft::after {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    transform: rotate(-45deg);
+    left: 2px;
+    top: 1;
+}
+
+.arrowRight::after {
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    right: 2px;
+    left: 80px;
+    top: 1;
+}
+
+
+/* -----------------DOTS----------------------------------------- */
+
+
+.dots {
+    width: 160px;
+    margin-top: 101px;
+    left: 195px;
+    position: absolute;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot:hover {
+background-color: rgb(249, 247, 247);
+}
+
+.dot.active {
+    background-color: #FFFFFF !important;
+}
